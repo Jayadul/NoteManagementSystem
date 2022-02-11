@@ -1,0 +1,29 @@
+{"Notes":[
+  {
+    "Id": "00000000-0000-0000-0000-000000000000",
+    "NoteType": 0,
+    "NoteStatus": 0,
+    "Text": "12345",
+    "Date": "2022-11-02T00:00:00",
+    "Url": null,
+    "CreatedBy": null
+  },
+  {
+    "Id": "00000000-0000-0000-0000-000000000000",
+    "NoteType": 2,
+    "NoteStatus": 1,
+    "Text": "newww",
+    "Date": "2022-02-02T00:00:00",
+    "Url": null,
+    "CreatedBy": null
+  },
+  {
+    "Id": "b71e0a19-f21a-4518-a18e-f5ebcc48178a",
+    "NoteType": 2,
+    "NoteStatus": 1,
+    "Text": "pppp",
+    "Date": "2022-11-02T00:00:00",
+    "Url": null,
+    "CreatedBy": null
+  }
+]}

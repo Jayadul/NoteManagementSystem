@@ -1,0 +1,55 @@
+﻿@model IEnumerable<NMS.WEB.Models.ViewModel.VmNote>
+@{
+    ViewData["Title"] = "Notes";
+}
+
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0 text-dark">Note</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6 text-right">
+                <a class="btn bg-blue"  href="/Note/Create/">
+                    <i class="fa fa-plus-square"></i>
+                    Add new
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-Text">Existing Notes</h3>
+            </div>
+            <div class="card-body pb-0">
+                <span id="exportButtons" class="text-right"></span>
+            </div>
+            <div class="card-body">
+                <table id="dataTable" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Text</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var note in Model)
+                        {
+                            <tr>
+                                <td>@note.Text</td>
+                                <td><a class="btn btn-danger" href="/Note/Delete/@note.Id"><i class="fas fa-trash-alt"></i></a></td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+

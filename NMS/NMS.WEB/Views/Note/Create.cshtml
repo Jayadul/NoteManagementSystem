@@ -1,0 +1,168 @@
+﻿@model NMS.WEB.Models.ViewModel.VmNote
+@using NMS.WEB.Models.Enum
+@{
+    ViewBag.Title = "Create Note";
+    var today = DateTime.Now.ToString("dd/MM/yyyy");
+}
+
+<!--Header Section-->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0 text-dark d-inline">@ViewBag.Title</h1>&nbsp;&nbsp;
+                <a href="/Note/" class="gotoPrevious">
+                    <i class="fas fa-arrow-circle-left"></i> &nbsp;
+                    <span>
+                        Back to Note List
+                    </span>
+                </a>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/Note/" class="gotoPrevious">Note</a></li>
+                    <li class="breadcrumb-item active">Add New</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Content Section-->
+<section class="content">
+    <div class="container-fluid">
+        <div class="card">
+            @using (Html.BeginForm("Create", "Note", FormMethod.Post, new { @id = "mainForm", enctype = "multipart/form-data", onSubmit = "return ValidateFormData()" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <input type="hidden" name="Id" id="Id" class="form-control" value="0" />
+                <div class="modal-header">
+                    <h5 class="modal-Text" id="AddorEditModalHeader">Add Note</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label class="mt-3">
+                                Type <sup class="text-danger">*</sup><br /><small>
+                                    Select a Note Type
+                                </small>
+                            </label>
+                            <select id="NoteType" name="NoteType" class="form-control" asp-items="Html.GetEnumSelectList<NoteType>()">
+                                <option selected="selected" value="">Please select</option>
+                            </select>
+                            <span class="text-danger" id="spnNoteType"></span>
+                        </div>
+
+                        <div class="col-sm-6 toHide Date">
+                            <label class="mt-3">
+                                Date <br /><small>
+                                    Reminder Date
+                                </small>
+                            </label>
+                            <input type="text" name="Date" id="Date" class="form-control form-padding" placeholder="DD/MM/YYYY" value="@today" />
+                            <span id="spnDate" class="text-danger"></span>
+                        </div>
+                        <div class="col-sm-12 toHide Url">
+                            <label class="mt-3">
+                                Url <br /><small>
+                                    Enter to bookmark in bowser
+                                </small>
+                            </label>
+                            <input type="text" name="Url" id="Url" class="form-control form-padding" />
+                            <span id="spnUrl" class="text-danger"></span>
+                        </div>
+                        <div class="col-sm-12 toHide Text">
+                            <label class="mt-3">
+                                Text <sup class="text-danger">*</sup><br /><small>
+                                    Note text
+                                </small>
+                            </label>
+                            <textarea type="text" name="Text" id="Text" class="form-control"></textarea>
+                            <span class="text-danger" id="spnText"></span>
+                        </div>
+                        <div class="col-sm-6 toHide NoteStatus">
+                            <label class="mt-3">
+                                Status <sup class="text-danger">*</sup><br /><small>
+    Note Status
+</small>
+                            </label>
+                            <select id="NoteStatus" name="NoteStatus" class="form-control" asp-items="Html.GetEnumSelectList<NoteStatus>()">
+                                <option selected="selected" value="">Please select</option>
+                            </select>
+                            <span class="text-danger" id="spnNoteStatus"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" id="save">Save changes</button>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('.toHide').hide();
+            //date
+            $(function () {
+                $('#Date').datepicker({
+                    autoclose: true,
+                    format: 'dd/mm/yyyy'
+                }).on('changeDate', function (e) {
+                    selectedDate = new Date(e.date.valueOf());
+                    $('#Date').val(selectedDate);
+                });
+            });
+        });
+
+        //Empty Validation
+        //function ValidateFormData() {
+        //    $('#save').prop('disabled', true);
+        //    isValid = true;
+
+        //    //values
+        //    var Text = $('#Text').val();
+
+        //    //validation msg
+        //    $('#spnText').hide();
+
+        //    if (Text == null || Text == "" || typeof Text == "undefined") {
+        //        $('#spnText').text("Text is required");
+        //        $('#spnText').show();
+        //        isValid = false;
+        //    }
+        //    if (isValid == false) {
+        //        $('#save').prop('disabled', false);
+        //    }
+        //    return isValid;
+        //}
+
+        $("#Text").keypress(function () {
+            $("#spnText").hide();
+        });
+
+        $("#NoteType").change(function () {
+            debugger
+            $('.toHide').hide();
+            var type = $(this).val();
+            if (type == "0") {
+                $(".Text").show();
+            }
+            if (type == "1") {
+                $(".Text").show();
+                $(".Date").show();
+            }
+            if (type == "2") {
+                $(".Text").show();
+                $(".Date").show();
+                $(".NoteStatus").show();
+            }
+            if (type == "3") {
+                $(".Url").show();
+            }
+        });
+    </script>
+}
