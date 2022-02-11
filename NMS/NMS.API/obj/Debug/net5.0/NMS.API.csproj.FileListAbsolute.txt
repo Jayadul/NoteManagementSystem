@@ -29,3 +29,34 @@ D:\File.Repository\Locker\Personal\Notes Management System\NMS\NMS.API\obj\Debug
 D:\File.Repository\Locker\Personal\Notes Management System\NMS\NMS.API\obj\Debug\net5.0\ref\NMS.API.dll
 D:\File.Repository\Locker\Personal\Notes Management System\NMS\NMS.API\obj\Debug\net5.0\NMS.API.pdb
 D:\File.Repository\Locker\Personal\Notes Management System\NMS\NMS.API\obj\Debug\net5.0\NMS.API.genruntimeconfig.cache
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin\Debug\net5.0\appsettings.Development.json
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin\Debug\net5.0\appsettings.json
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin\Debug\net5.0\JsonDb\UserDB.json
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin\Debug\net5.0\JsonDb\NoteDB.json
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin\Debug\net5.0\NMS.API.exe
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin\Debug\net5.0\NMS.API.deps.json
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin\Debug\net5.0\NMS.API.runtimeconfig.json
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin\Debug\net5.0\NMS.API.runtimeconfig.dev.json
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin\Debug\net5.0\NMS.API.dll
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin\Debug\net5.0\ref\NMS.API.dll
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin\Debug\net5.0\NMS.API.pdb
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\obj\Debug\net5.0\NMS.API.csproj.AssemblyReference.cache
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\obj\Debug\net5.0\NMS.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\obj\Debug\net5.0\NMS.API.AssemblyInfoInputs.cache
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\obj\Debug\net5.0\NMS.API.AssemblyInfo.cs
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\obj\Debug\net5.0\NMS.API.csproj.CoreCompileInputs.cache
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\obj\Debug\net5.0\NMS.API.MvcApplicationPartsAssemblyInfo.cs
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\obj\Debug\net5.0\NMS.API.MvcApplicationPartsAssemblyInfo.cache
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\obj\Debug\net5.0\scopedcss\bundle\NMS.API.styles.css
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\obj\Debug\net5.0\staticwebassets\NMS.API.StaticWebAssets.Manifest.cache
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\obj\Debug\net5.0\NMS.API.RazorTargetAssemblyInfo.cache
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\obj\Debug\net5.0\NMS.API.csproj.CopyComplete
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\obj\Debug\net5.0\NMS.API.dll
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\obj\Debug\net5.0\ref\NMS.API.dll
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\obj\Debug\net5.0\NMS.API.pdb
+D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\obj\Debug\net5.0\NMS.API.genruntimeconfig.cache

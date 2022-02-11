@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lFAgDtzT0btAkXjlrK+B2V5145N5aF0l9dFcoBMrYpxanDLqL8jKkhWUCNLc+X1UCY/zA5ImzEM8pVO9aK1vBg==",
+  "dgSpecHash": "isPQxz8VjCw8eu1hTH/CjiP3Q8MVvDjj5T81KFxBGg3xGOM91hFVnYjqeNlTM2dNw5UXe7EAswoOZC1fRR2TOw==",
   "success": true,
-  "projectFilePath": "D:\\File.Repository\\Locker\\Personal\\Notes Management System\\NMS\\NMS.WEB\\NMS.WEB.csproj",
+  "projectFilePath": "D:\\File.Repository\\Locker\\Personal\\Projects\\NoteManagementSystem\\NMS\\NMS.WEB\\NMS.WEB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jayad\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jayad\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.12\\microsoft.aspnetcore.cryptography.internal.5.0.12.nupkg.sha512",

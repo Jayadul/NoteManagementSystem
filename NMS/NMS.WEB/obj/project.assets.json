@@ -6146,11 +6146,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\File.Repository\\Locker\\Personal\\Notes Management System\\NMS\\NMS.WEB\\NMS.WEB.csproj",
+      "projectUniqueName": "D:\\File.Repository\\Locker\\Personal\\Projects\\NoteManagementSystem\\NMS\\NMS.WEB\\NMS.WEB.csproj",
       "projectName": "NMS.WEB",
-      "projectPath": "D:\\File.Repository\\Locker\\Personal\\Notes Management System\\NMS\\NMS.WEB\\NMS.WEB.csproj",
+      "projectPath": "D:\\File.Repository\\Locker\\Personal\\Projects\\NoteManagementSystem\\NMS\\NMS.WEB\\NMS.WEB.csproj",
       "packagesPath": "C:\\Users\\jayad\\.nuget\\packages\\",
-      "outputPath": "D:\\File.Repository\\Locker\\Personal\\Notes Management System\\NMS\\NMS.WEB\\obj\\",
+      "outputPath": "D:\\File.Repository\\Locker\\Personal\\Projects\\NoteManagementSystem\\NMS\\NMS.WEB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jayad\\AppData\\Roaming\\NuGet\\NuGet.Config",

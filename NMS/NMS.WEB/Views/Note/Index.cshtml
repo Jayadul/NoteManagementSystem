@@ -33,17 +33,25 @@
                 <table id="dataTable" class="table table-bordered table-striped">
                     <thead>
                         <tr>
+                            <th>Type</th>
                             <th>Text</th>
+                            <th>Date</th>
+                            <th>Url</th>
+                            <th>Status</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach (var note in Model)
                         {
-                            <tr>
-                                <td>@note.Text</td>
-                                <td><a class="btn btn-danger" href="/Note/Delete/@note.Id"><i class="fas fa-trash-alt"></i></a></td>
-                            </tr>
+                        <tr>
+                            <td>@note.NoteType.ToString()</td>
+                            <td>@note.Text</td>
+                            <td>@note.Date?.ToString("dd MMM yyyy")</td>
+                            <td>@note.Url</td>
+                            <td>@note.NoteStatus.ToString()</td>
+                            <td><a class="btn btn-danger" href="/Note/Delete/@note.Id"><i class="fas fa-trash-alt"></i></a></td>
+                        </tr>
                         }
 
                     </tbody>

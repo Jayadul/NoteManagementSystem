@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\File.Repository\\Locker\\Personal\\Notes Management System\\NMS\\NMS.API\\NMS.API.csproj": {}
+    "D:\\File.Repository\\Locker\\Personal\\Projects\\NoteManagementSystem\\NMS\\NMS.API\\NMS.API.csproj": {}
   },
   "projects": {
-    "D:\\File.Repository\\Locker\\Personal\\Notes Management System\\NMS\\NMS.API\\NMS.API.csproj": {
+    "D:\\File.Repository\\Locker\\Personal\\Projects\\NoteManagementSystem\\NMS\\NMS.API\\NMS.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\File.Repository\\Locker\\Personal\\Notes Management System\\NMS\\NMS.API\\NMS.API.csproj",
+        "projectUniqueName": "D:\\File.Repository\\Locker\\Personal\\Projects\\NoteManagementSystem\\NMS\\NMS.API\\NMS.API.csproj",
         "projectName": "NMS.API",
-        "projectPath": "D:\\File.Repository\\Locker\\Personal\\Notes Management System\\NMS\\NMS.API\\NMS.API.csproj",
+        "projectPath": "D:\\File.Repository\\Locker\\Personal\\Projects\\NoteManagementSystem\\NMS\\NMS.API\\NMS.API.csproj",
         "packagesPath": "C:\\Users\\jayad\\.nuget\\packages\\",
-        "outputPath": "D:\\File.Repository\\Locker\\Personal\\Notes Management System\\NMS\\NMS.API\\obj\\",
+        "outputPath": "D:\\File.Repository\\Locker\\Personal\\Projects\\NoteManagementSystem\\NMS\\NMS.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jayad\\AppData\\Roaming\\NuGet\\NuGet.Config",
