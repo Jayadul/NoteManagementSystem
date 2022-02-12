@@ -7,17 +7,17 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NMS.Service
+namespace NMS.API.Service
 {
-    public class NoteService
+    public class UserService
     {
-        public bool Create(Note dto, string filepath)
+        public bool Create(User dto, string filepath)
         {
             try
             {
-                var NoteData = DataDeserialize(filepath);
-                NoteData.Add(dto);
-                NoteJsonSave(NoteData, filepath);
+                var UserData = DataDeserialize(filepath);
+                UserData.Add(dto);
+                UserJsonSave(UserData, filepath);
 
                 return true;
             }
@@ -26,38 +26,38 @@ namespace NMS.Service
                 return false;
             }
         }
-        public bool UniqueCheck(Guid NoteId, string filepath)
+        public bool UniqueCheck(Guid UserId, string filepath)
         {
-            var NoteData = DataDeserialize(filepath);
+            var UserData = DataDeserialize(filepath);
             bool alreadyExists = false;
-            foreach (var s in NoteData)
+            foreach (var s in UserData)
             {
-                if (s.Id == NoteId)
+                if (s.Id == UserId)
                 {
                     alreadyExists = true;
                 }
             }
             return alreadyExists;
         }
-        public List<Note> DataDeserialize(string filepath)
+        public List<User> DataDeserialize(string filepath)
         {
-            var NewJson = new List<Note>();
+            var NewJson = new List<User>();
             var CurrentJson = File.ReadAllText(filepath);
             if (!String.IsNullOrEmpty(CurrentJson))
             {
                 var CurrentJsonParse = JObject.Parse(CurrentJson);
-                var CurrentJsonRoutes = CurrentJsonParse["Notes"];
-                NewJson = JsonConvert.DeserializeObject<List<Note>>(CurrentJsonRoutes.ToString());
-            }          
+                var CurrentJsonRoutes = CurrentJsonParse["Users"];
+                NewJson = JsonConvert.DeserializeObject<List<User>>(CurrentJsonRoutes.ToString());
+            }
             return NewJson;
         }
-        public List<Note> GetByUser(Guid id, string filepath)
+        public List<User> GetByUser(Guid id, string filepath)
         {
             var allData = DataDeserialize(filepath);
             var dataByUser = allData.Where(w => w.Id == id).ToList();
             return dataByUser;
         }
-        public bool Update(Note model, string filepath)
+        public bool Update(User model, string filepath)
         {
             try
             {
@@ -65,19 +65,18 @@ namespace NMS.Service
                 var dataById = allData.FirstOrDefault(w => w.Id == model.Id);
                 allData.Remove(dataById);
                 dataById.Id = model.Id;
-                dataById.NoteType = model.NoteType;
-                dataById.Text = model.Text;
-                dataById.Url = model.Url;
-                dataById.CreatedBy = model.CreatedBy;
-                dataById.Date = model.Date;
+                dataById.Name = model.Name;
+                dataById.Email = model.Email;
+                dataById.Password = model.Password;
+                dataById.DateOfBirth = model.DateOfBirth;
                 allData.Add(dataById);
-                NoteJsonSave(allData, filepath);
+                UserJsonSave(allData, filepath);
                 return true;
             }
             catch (Exception)
             {
 
-                return false;            
+                return false;
             }
         }
         public bool Delete(Guid id, string filepath)
@@ -87,7 +86,7 @@ namespace NMS.Service
                 var allData = DataDeserialize(filepath);
                 var dataById = allData.FirstOrDefault(w => w.Id == id);
                 allData.Remove(dataById);
-                NoteJsonSave(allData, filepath);
+                UserJsonSave(allData, filepath);
                 return true;
             }
             catch (Exception)
@@ -96,10 +95,10 @@ namespace NMS.Service
                 return false;
             }
         }
-        public void NoteJsonSave(List<Note> NoteData, string filepath)
+        public void UserJsonSave(List<User> UserData, string filepath)
         {
-            var ConvertedJson = JsonConvert.SerializeObject(NoteData, Formatting.Indented);
-            var ConvertedJsonRouteFormat = "{\"Notes\":" + ConvertedJson + "}";
+            var ConvertedJson = JsonConvert.SerializeObject(UserData, Formatting.Indented);
+            var ConvertedJsonRouteFormat = "{\"Users\":" + ConvertedJson + "}";
             File.WriteAllText(filepath, ConvertedJsonRouteFormat);
         }
     }

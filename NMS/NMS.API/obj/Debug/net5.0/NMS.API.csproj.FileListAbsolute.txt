@@ -45,7 +45,6 @@ D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin
 D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\obj\Debug\net5.0\NMS.API.csproj.AssemblyReference.cache
 D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\obj\Debug\net5.0\NMS.API.GeneratedMSBuildEditorConfig.editorconfig
 D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\obj\Debug\net5.0\NMS.API.AssemblyInfoInputs.cache
 D:\File.Repository\Locker\Personal\Projects\NoteManagementSystem\NMS\NMS.API\obj\Debug\net5.0\NMS.API.AssemblyInfo.cs

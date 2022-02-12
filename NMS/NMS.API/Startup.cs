@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using NMS.API.Service;
 using NMS.Service;
 using System;
 using System.Collections.Generic;
@@ -27,6 +28,7 @@ namespace NMS
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<NoteService, NoteService>();
+            services.AddTransient<UserService, UserService>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
